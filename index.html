@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Deals & Premium Access | Direct Message</title>
+    <meta name="description" content="Get the best platform deals and instant support via Direct Message.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .glow-btn {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+            transition: all 0.3s ease;
+        }
+        .glow-btn:hover {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.8);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between items-center px-4 py-8">
+
+    <!-- Main Container -->
+    <main class="w-full max-w-md bg-slate-800 border border-slate-700 rounded-3xl p-6 shadow-2xl text-center space-y-6">
+        
+        <!-- Profile Image -->
+        <div class="relative w-32 h-32 mx-auto">
+            <img src="https://i.ibb.co/SwVG3d9R/IMG-20261004-193614-250.jpg" alt="Profile Image" class="w-full h-full object-cover rounded-full border-4 border-blue-500 shadow-lg">
+            <span class="absolute bottom-1 right-1 bg-green-500 w-5 h-5 rounded-full border-2 border-slate-800" title="Online"></span>
+        </div>
+
+        <!-- Title & Bio -->
+        <div class="space-y-2">
+            <h1 class="text-2xl font-bold text-white tracking-wide">Platform Deals Hub</h1>
+            <p class="text-slate-400 text-sm">Best Platform Deals & Services Provider</p>
+            <div class="inline-flex items-center gap-2 bg-blue-500/10 text-blue-400 text-xs px-3 py-1 rounded-full border border-blue-500/20">
+                <i class="fa-solid fa-bolt text-yellow-400"></i> Instant Response via DM
+            </div>
+        </div>
+
+        <!-- Features Cards -->
+        <div class="grid grid-cols-2 gap-3 text-left pt-2">
+            <div class="bg-slate-700/50 p-3 rounded-xl border border-slate-600/50">
+                <i class="fa-solid fa-tags text-blue-400 text-lg mb-1"></i>
+                <h2 class="text-xs font-semibold text-white">Best Market Rates</h2>
+                <p class="text-[10px] text-slate-400">Exclusive platform deals</p>
+            </div>
+            <div class="bg-slate-700/50 p-3 rounded-xl border border-slate-600/50">
+                <i class="fa-solid fa-shield-halved text-green-400 text-lg mb-1"></i>
+                <h2 class="text-xs font-semibold text-white">100% Trusted</h2>
+                <p class="text-[10px] text-slate-400">Fast & safe processing</p>
+            </div>
+        </div>
+
+        <!-- Call to Action (DM Button) -->
+        <div class="pt-2">
+            <a href="https://t.me/m/QJOszv-dOTE1" target="_blank" rel="noopener noreferrer" class="glow-btn flex items-center justify-center gap-3 w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-4 px-6 rounded-2xl text-lg border border-blue-400/30 active:scale-95">
+                <i class="fa-paper-plane text-xl"></i>
+                <span>Send Direct Message</span>
+            </a>
+            <p class="text-[11px] text-slate-400 mt-2">Click above to start a conversation on Telegram</p>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full max-w-md text-center mt-8 space-y-4 text-xs text-slate-400">
+        
+        <!-- Privacy & Terms Links -->
+        <div class="flex justify-center gap-4">
+            <button onclick="toggleModal('privacy-modal')" class="hover:underline hover:text-slate-200">Privacy Policy</button>
+            <span>•</span>
+            <button onclick="toggleModal('terms-modal')" class="hover:underline hover:text-slate-200">Terms & Conditions</button>
+        </div>
+
+        <!-- Ad Manager Credits -->
+        <p class="text-slate-500">
+            Ads Managed by 
+            <a href="https://t.me/senorita_xoxo" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline font-medium">
+                @senorita_xoxo
+            </a>
+        </p>
+
+        <p class="text-[10px] text-slate-600">&copy; 2026 Platform Deals. All rights reserved.</p>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 max-w-sm w-full space-y-4 text-left max-h-[80vh] overflow-y-auto">
+            <h3 class="text-lg font-bold text-white">Privacy Policy</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+                We respect your privacy. Any information or contact details shared through Direct Messaging are used strictly to provide deal details and support. We do not sell or share your information with third parties.
+            </p>
+            <button onclick="toggleModal('privacy-modal')" class="w-full bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-xl text-xs font-semibold">Close</button>
+        </div>
+    </div>
+
+    <!-- Terms & Conditions Modal -->
+    <div id="terms-modal" class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 hidden z-50">
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 max-w-sm w-full space-y-4 text-left max-h-[80vh] overflow-y-auto">
+            <h3 class="text-lg font-bold text-white">Terms & Conditions</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+                By contacting us via Direct Message, you agree to our terms. All deals and services provided are subject to availability and terms discussed during the direct interaction.
+            </p>
+            <button onclick="toggleModal('terms-modal')" class="w-full bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-xl text-xs font-semibold">Close</button>
+        </div>
+    </div>
+
+    <!-- Modal Script -->
+    <script>
+        function toggleModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
