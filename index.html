@@ -78,9 +78,9 @@
             </div>
         </div>
 
-        <!-- Call to Action (DM Button) -->
+        <!-- Call to Action (DM Button with Pixel Event Tracking) -->
         <div class="pt-2">
-            <a href="https://t.me/m/QJOszv-dOTE1" target="_blank" rel="noopener noreferrer" class="glow-btn flex items-center justify-center gap-3 w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-4 px-6 rounded-2xl text-lg border border-blue-400/30 active:scale-95">
+            <a href="https://t.me/m/QJOszv-dOTE1" onclick="trackSubscribeEvent()" target="_blank" rel="noopener noreferrer" class="glow-btn flex items-center justify-center gap-3 w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-4 px-6 rounded-2xl text-lg border border-blue-400/30 active:scale-95">
                 <i class="fa-paper-plane text-xl"></i>
                 <span>Send Direct Message</span>
             </a>
@@ -132,11 +132,18 @@
         </div>
     </div>
 
-    <!-- Modal Script -->
+    <!-- Scripts -->
     <script>
         function toggleModal(modalId) {
             const modal = document.getElementById(modalId);
             modal.classList.toggle('hidden');
+        }
+
+        // Meta Pixel Subscribe Event Tracker
+        function trackSubscribeEvent() {
+            if (typeof fbq === 'function') {
+                fbq('track', 'Subscribe');
+            }
         }
     </script>
 </body>
